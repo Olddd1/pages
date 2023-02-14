@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+* {font-family: 'Raleway';
+    font-size: 0.18in
+}
+h1, h1 > .pink {
+    font-family: 'Raleway';
+    font-size: 0.36in;
+    font-weight: 100000;
+}
+h2, h2 > span {
+    font-size: 0.27in;
+    margin-bottom: 15px;
+}

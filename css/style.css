@@ -1,1 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 
+
+
+body {
+    width: 100%;
+    background-image: url(../images/background.svg);
+    background-size: auto;
+    color: #2b2239;
+}
+img {
+    width: 100%;
+}
+
+.authorization {
+    background-image: url("../images//stars.png");
+    background-size: cover ;
+    display: flex;
+    margin-top: -10%;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.advantages {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages__item > img{
+    width: 100%;
+}
+
+.advantages__item > p {
+    text-align: center;
+    width: 100%;
+    margin: 10px auto 40px auto;
+}
+
+.advantages__item {
+    width: 40%;
+    max-width: 40%;
+    min-width: 170px;
+}
+
+.advantages__item > b {
+    font-weight: 1000;
+}
+
+.article > img {
+    width: 40%;
+    margin-left: -5%;
+    margin-top: -7%;
+} 
+
+.article {
+    display: flex;
+    padding: 50px 0;
+    margin-top: -2%;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.game_circle {
+    background-image: url(../images/game_circle_background.svg);
+}
+
+.greeting {
+    display: flex;
+}
+
+.greeting__text {
+    width: 70%;
+}
+
+.mum_and_kid__base {
+    position: inherit;
+    width: 100%;
+    height: auto;
+    z-index: -10000;
+}
+
+.mum_and_kid__hand {
+    position: absolute;
+    width: 23%;
+    margin-left: 58%;
+    margin-top: 52%;
+    height: auto;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.mum_and_kid_img {
+    width: 65%;
+    position: relative;
+    margin-top: -5%;
+    margin-right: -7%;
+}
+.pink {
+    color: #b74686;
+}
+.green_bg {
+    padding: 0.03in;  
+    background-color: #7ac46c;
+    border-radius: 0.1in;
+    white-space: nowrap;
+}
+.orange_bg {
+    padding: 0.01in 0.03in;  
+    background-color: #ef875c;
+    border-radius: 0.12in;
+}
+.pink_bg {
+    padding: 0.01in 0.03in;
+    background-color: #ef62ae;
+    border-radius: 0.12in;
+    white-space: nowrap;
+}
+.info {
+    color: #fff;
+    width: 52%;
+    margin: 3% 7%;
+}
+.info__text {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.info__text  > p{
+    width: 50%;
+}
+.relative {
+    position: relative;
+}
+.disclaimer {
+    font-size: 0.1in;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#info__text1::before {
+    content: url(../images/orange_star.svg);
+    position: inherit;
+    float: left;
+    height: 0.15in;
+    width: 0.15in;
+    margin-left: -0.16in;
+    
+}
+
+#info__text2::before {
+    content: url(../images/pink_star.svg);
+    position: inherit;
+    float: left;
+    height: 0.15in;
+    width: 0.15in;
+    margin-left: -0.16in;
+    
+}
+@media (max-width: 1000px) {
+    .container {
+        width: 75%;
+    }
+}
+@media (max-width: 1000px) {
+    .info__text {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .info__text > p{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 80%;
+    }
+    .authorization {
+        margin-top: -10%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info {
+        width: 80%;
+    }
+
+    .info__text {
+        width: 100%;
+    }
+}
+@media (max-width: 630px) {
+    .container {
+        width: 90%;
+    }
+    .mum_and_kid_img {
+        margin-top: 0;
+        margin-right: 0;
+        width: 95%;
+        align-self: self-end;
+    }
+    .greeting, .article {
+        flex-direction: column;
+    }
+    .article {
+        align-items: center;
+    }
+    .article > img {
+        width: 80%;
+    }
+    .advantages {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .advantages__item {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .authorization {
+        margin-top: -18.5%;
+        background-image: url("../images/mobile_stars.png");
+    }
+}
